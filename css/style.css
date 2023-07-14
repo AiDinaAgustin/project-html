@@ -1,0 +1,62 @@
+body{
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(../img/bg3.jpg);
+    background-position: center;
+    background-size: cover;}
+nav{
+    width: 100%;
+    height: 15px;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    margin: auto;
+    box-shadow: none;
+}
+
+nav a{
+    color: #fff;
+    padding-right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.biodata{
+    height: 300px;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.biodata h1{
+    color: #ff7200;
+    font-size: 40px;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+}
+
+
+.biodata p{
+    color: #fff;
+    font-size: 20px;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+}
+.overview{
+    color: #fff;
+    justify-content: center;
+    text-align: center;
+}
+
+.tab{
+    color: #fff;
+}
+
+h1{
+    color: white;
+}
+footer{
+    color: white;
+    width: 100%;
+    height: 20px;
+}
