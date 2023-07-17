@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Pertamaku</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../project-html/img/2.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-serif bg-[url('/img/bg3.jpg')] bg-no-repeat bg-cover max-h-max">
+    <div class="px-4 py-2  text-white bg-gray-600" id="myTopnav">
+        <a
+            class="text-white transition duration-200 hover:text-orange-600 hover:ease-in-out focus:text-neutral-200 disabled:text-black/30 motion-reduce:transition-none lg:px-4 [&.active]:text-black/90 [&.active]:text-neutral-200"
+            aria-current="page"
+            href="index.html"
+            data-te-nav-link-ref><i class="fa fa-fw fa-home"></i>Home</a>
+        <a
+            class="text-white transition duration-200 hover:text-orange-600 hover:ease-in-out focus:text-neutral-200 disabled:text-black/30 motion-reduce:transition-none lg:px-4 [&.active]:text-black/90 [&.active]:text-neutral-200"
+            aria-current="page"
+            href="cv.pdf"
+            data-te-nav-link-ref><i class="fa fa-fw fa-download"></i>Download CV</a>
+        <a
+            class="text-white transition duration-200 hover:text-orange-600 hover:ease-in-out focus:text-neutral-200 disabled:text-black/30 motion-reduce:transition-none lg:px-4 [&.active]:text-black/90 [&.active]:text-neutral-200"
+            aria-current="page"
+            href="about.html"
+            data-te-nav-link-ref><i class="fa fa-fw fa-user"></i>About</a>
+        <a
+            class="text-white transition duration-200 hover:text-orange-600 hover:ease-in-out focus:text-neutral-200 disabled:text-black/30 motion-reduce:transition-none lg:px-4 [&.active]:text-black/90 [&.active]:text-neutral-200"
+            aria-current="page"
+            href="contact.html"
+            data-te-nav-link-ref><i class="fa fa-fw fa-envelope"></i>Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <br>
+    <div class="flex flex-col items-center text-white">
+        <img src="img/2.jpg" alt="Foto Ai Dina Agustin" style="width: 200px; ">
+        <br>
+        <h1 style="font-family: 'Times New Roman';">Ai Dina Agustin</h1>
+        <p>(Mahasiswa TI)</p>
+    </div>
+<hr>
+<br>
+    <div class="text-center text-white">
+        <h1 class="text-3xl font-bold">Overview</h1>
+        <p>Saya adalah seorang mahasiswa Teknik Informatika, sekarang sedang melaksanakan PKL di Digital Kode</p>
+    </div>
+    <br>
+    <div class="flex flex-col">
+        <div class="overflow-x-auto sm:-mx-1 lg:-mx-2">
+          <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+            <div class="overflow-hidden">
+              <table
+                class="min-w-full border text-center text-sm font-light dark:border-neutral-500">
+                <thead class="border-b font-medium dark:border-neutral-500">
+                <tr>
+                    <th scope="col"
+                    class="border-r px-4 py-2 dark:border-neutral-500 bg-white">Skill</th>
+                    <th scope="col"
+                    class="border-r px-4 py-2 dark:border-neutral-500 bg-white">Pengalaman</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="border-b dark:border-neutral-500  text-white">
+                    <td class="whitespace-nowrap border-r px-4 py-2 font-medium dark:border-neutral-500">
+                        <ul>
+                            <li>HTML (Beginner) </li>
+                            <li>CSS (Beginner)</li>
+                            <li>PHP (Beginner)</li>
+                            <li>MySQL (Beginner)</li>
+                        </ul>
+                    </td>
+                    <td class="whitespace-nowrap border-r px-4 py-2 font-medium dark:border-neutral-500">
+                        <ul>
+                            <li>PKL di Digital Kode</li>
+                            <li>PKL di Digital Kode</li>
+                            <li>PKL di Digital Kode</li>
+                            <li>PKL di Digital Kode</li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <hr>
+    <footer class="text-center text-white">
+        2023 &copy; Ai Dina Agustin
+    </footer>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "") {
+            x.className += " responsive";
+          } else {
+            x.className = "";
+          }
+        }
+</script>
+</body>
+</html>
