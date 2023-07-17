@@ -18,20 +18,31 @@
           <i class="fa fa-bars"></i>
         </a>
       </div>
-    <h1>Contact Me</h1>
-    <form action="#">
-        <label for="email">Email</label>
-        <br>
-        <input type="email" name="email" id="email" placeholder="alamat email..">
-        <br>
-        <br>
-        <label for="pesan">Pesan </label>
-        <br>
-        <textarea name="pesan" id="pesan" cols="50" rows="10" placeholder="isi pesan.."></textarea>
-        <br>
-        <br>
-        <input type="submit" value="Kirim" >
-    </form>
+    <div class="contact">
+        <h1>Contact Me</h1>
+    </div>    
+    <div class="container">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Indonesia</option>
+            <option value="canada">Jepang</option>
+            <option value="usa">Korea</option>
+          </select>
+      
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+      
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    
     <br><br>
     <hr>
     <hr>
@@ -48,9 +59,5 @@
           }
     }
 </script>
-
-    <audio autoplay>
-        <source src="audio/1.mp3" type="audio/mp3">
-    </audio>
 </body>
 </html>
