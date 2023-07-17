@@ -12,7 +12,7 @@
 <body class="font-serif bg-[url('/img/bg3.jpg')] bg-no-repeat bg-cover max-h-max">
     <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-        <a href="https://flowbite.com/" class="flex items-center">
+        <a href="index.html" class="flex items-center">
             <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Websiteku</span>
         </a>
         <div class="flex md:order-2">
@@ -79,8 +79,9 @@
 <br>
     <div class="text-center text-white">
         <h1 class="text-3xl font-bold">Overview</h1>
+        <br>
         <p>Saya adalah seorang mahasiswa Teknik Informatika, sekarang sedang melaksanakan PKL di Digital Kode</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum non officia ab ullam reprehenderit dolorum porro laboriosam et, aut ratione quia quibusdam, voluptate quos, consectetur molestiae excepturi esse architecto illum!</p>
+        <p class="text-justify px-10">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio optio, ipsum unde hic, pariatur dignissimos non voluptatem in mollitia voluptatibus sunt earum iste quo neque eaque. Impedit magnam aspernatur nihil?. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea blanditiis expedita vero ab. Eligendi illum fugiat deleniti fugit beatae alias explicabo quo magni, corporis quas nisi provident quae a odit!. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt autem fugit ullam cum, nesciunt sed reiciendis sit aperiam quidem doloribus recusandae quaerat repellendus odit at impedit asperiores fuga magni maxime. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit eum quidem rerum odit vel suscipit quod nisi cumque ad non, voluptatum cupiditate harum, dolore quia quos? Provident perspiciatis repudiandae quod. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, reprehenderit. Doloremque, similique amet quam adipisci nemo accusamus facilis voluptas dolor sed culpa velit laborum? Corporis veniam unde aut maxime accusantium!. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum non officia ab ullam reprehenderit dolorum porro laboriosam et, aut ratione quia quibusdam, voluptate quos, consectetur molestiae excepturi esse architecto illum!. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga doloremque amet tempore laborum mollitia repudiandae perspiciatis magnam? Necessitatibus ipsam, fugiat tenetur dignissimos at odio ab adipisci nam mollitia exercitationem nihil?. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio explicabo corrupti unde tenetur obcaecati quas ipsam reprehenderit maxime quasi! Magnam, ipsam culpa adipisci quasi maiores minus consequuntur sequi in corporis!</p>
     </div>
     <br>
     <div class="flex flex-col">
@@ -127,14 +128,19 @@
         2023 &copy; Ai Dina Agustin
     </footer>
     <script>
-        function myFunction() {
-          var x = document.getElementById("myTopnav");
-          if (x.className === "") {
-            x.className += " responsive";
-          } else {
-            x.className = "";
-          }
-        }
+        // Ambil elemen-elemen yang dibutuhkan
+const navbarToggle = document.querySelector('[data-collapse-toggle="navbar-sticky"]');
+const navbarMenu = document.querySelector('#navbar-sticky');
+
+// Tambahkan event listener pada tombol toggle navbar
+navbarToggle.addEventListener('click', function() {
+  // Toggle class 'hidden' pada navbar menu
+  navbarMenu.classList.toggle('hidden');
+  // Toggle atribut 'aria-expanded'
+  const isExpanded = navbarToggle.getAttribute('aria-expanded') === 'true';
+  navbarToggle.setAttribute('aria-expanded', !isExpanded);
+});
+
 </script>
 </body>
 </html>
