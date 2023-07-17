@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Halaman Contact</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="../project-html/img/2.png" type="image/x-icon">
 </head>
 <body>
-    <nav>
-        <a href="index.html">HOME</a> 
-        <a href="cv.pdf" download="cv.pdf">DOWNLOAD CV</a> 
-        <a href="about.html">ABOUT</a> 
-        <a href="contact.html">CONTACT</a> 
-    </nav>
-    <hr>
+    <div class="topnav" id="myTopnav">
+        <a href="index.html" class="active"><i class="fa fa-fw fa-home"></i>Home</a>
+        <a href="cv.pdf"><i class="fa fa-fw fa-download"></i>Download CV</a>
+        <a href="about.html"><i class="fa fa-fw fa-user"></i>About</a>
+        <a href="contact.html"><i class="fa fa-fw fa-envelope"></i>Contact</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     <h1>Contact Me</h1>
     <form action="#">
         <label for="email">Email</label>
@@ -35,5 +38,19 @@
     <footer>
         2023 &copy; Ai Dina Agustin
     </footer>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+    }
+</script>
+
+    <audio autoplay>
+        <source src="audio/1.mp3" type="audio/mp3">
+    </audio>
 </body>
 </html>
